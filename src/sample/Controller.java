@@ -24,9 +24,9 @@ public class Controller implements Initializable {
     private String Doctype = "pdf|doc|docx|webm";
     private String Audiotype = "mp3|wav";
     private String Pictype = "png|jpg|gif";
-    private String VMediatype[] = {"mp4", "wma", "aac", "avi", "flv", "mov", "mkv"};
-    private String DMediatype[] = {"pdf", "doc", "docx", "webm"};
-    private String AMediatype[] = {"mp3", "wav"};
+    private String VMediatype[] = {"mp4", "wma", "avi", "flv", "mov", "mkv","webm"};
+    private String DMediatype[] = {"pdf", "doc", "docx", "epub"};
+    private String AMediatype[] = {"mp3", "wav","aac"};
     private String PMediatype[] = {"png", "jpg","gif"};
     private boolean exist;
     @FXML
