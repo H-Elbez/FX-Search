@@ -15,3 +15,7 @@
 Example : 
 
 ![alt](img/img2.png)
+
+If you have any questions you can always contact me : elbez.hammouda@gmail.com
+
+FX Search is licensed under the GNU General Public License v3.0
