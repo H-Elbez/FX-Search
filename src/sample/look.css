@@ -1,0 +1,37 @@
+#BStop{
+    -fx-text-fill: #ffffff;
+    -fx-background-color:  #411d1f;
+}
+#BStop:hover{
+    -fx-background-color: #2d1616;
+}
+#bStart{
+    -fx-background-color: #411d1f;
+    -fx-background-radius: 0 5 5 0;
+}
+#bStart:hover{
+    -fx-background-color: #2d1616;
+}
+.scroll-pane .viewport {
+    -fx-background-color: transparent;}
+
+.scroll-pane {
+    -fx-background-color:transparent;
+}
+
+#Search{
+    -fx-text-fill: aliceblue;
+}
+#type, .context-menu{
+    -fx-background-color: #411d1f;
+    -fx-background-radius: 0 5 5 0;
+    -fx-text-fill: aliceblue;
+    -fx-mark-color: #411d1f;
+}
+#type > .label{
+    -fx-text-fill: #ffffff; }
+#type .menu-item > .label{
+    -fx-text-fill: #ffffff; }
+.GridPane:hover{
+    -fx-background-color:  #411d1f;
+}

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXProgressBar?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="main" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="726.0" prefWidth="1078.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <children>
+        <ImageView fitHeight="726.0" fitWidth="1078.0" pickOnBounds="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <image>
+                <Image url="@Img/back.jpg" />
+            </image>
+            <effect>
+                <ColorAdjust />
+            </effect>
+        </ImageView>
+        <Pane prefHeight="133.0" prefWidth="1078.0" style="-fx-background-color: #231617;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <Pane fx:id="bStart" layoutX="1014.0" layoutY="51.0" onMouseClicked="#StartSearch" prefHeight="38.0" prefWidth="38.0">
+                    <children>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="6.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@Img/Screenshot_2018-01-24_09-59-59.png" />
+                            </image>
+                        </ImageView>
+                    </children>
+                </Pane>
+                <TextField fx:id="Search" layoutX="799.0" layoutY="51.0" prefHeight="38.0" prefWidth="215.0" promptText="Search ..." style="-fx-background-color: #411d1f; -fx-background-radius: 5 0 0 5;" />
+                <Label layoutX="48.0" layoutY="32.0" style="-fx-text-fill: #dedcdc;" text="Fx Search">
+                    <font>
+                        <Font size="40.0" />
+                    </font>
+                </Label>
+                <Label layoutX="52.0" layoutY="82.0" opacity="0.53" style="-fx-text-fill: #dedcdc;" text="Connected">
+                    <font>
+                        <Font size="11.0" />
+                    </font>
+                </Label>
+                <Line endX="110.0" fill="#411d1f" layoutX="237.0" layoutY="69.0" rotate="90.0" stroke="#512629" strokeWidth="1.5" />
+                <Line endX="50.0" fill="#411d1f" layoutX="767.0" layoutY="70.0" rotate="90.0" stroke="#512629" strokeWidth="1.5" />
+                <Button fx:id="BStop" disable="true" layoutX="695.0" layoutY="51.0" mnemonicParsing="false" onMouseClicked="#Stop" opacity="0.0" prefHeight="38.0" prefWidth="90.0" text="Stop" />
+                <Label fx:id="rescount" layoutX="318.0" layoutY="51.0" prefHeight="49.0" prefWidth="126.0" text="" textFill="#863b40">
+                    <font>
+                        <Font size="40.0" />
+                    </font>
+                </Label>
+                <ChoiceBox fx:id="type" layoutX="799.0" layoutY="8.0" prefHeight="38.0" prefWidth="215.0" />
+            <Label fx:id="searching" layoutX="318.0" layoutY="14.0" opacity="0.0" text="Searching ..." textFill="#863b40">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            </children>
+        </Pane>
+        <Pane layoutY="134.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+            <children>
+                <ScrollPane fitToHeight="true" fitToWidth="true" hbarPolicy="NEVER" maxHeight="592.0" maxWidth="1080.0" minHeight="592.0" minWidth="1080.0" prefHeight="592.0" prefWidth="1080.0">
+                    <content>
+                        <GridPane fx:id="data" prefHeight="590.0" prefWidth="1078.0" vgap="5.0">
+                            <columnConstraints>
+                                <ColumnConstraints hgrow="ALWAYS" maxWidth="914.0" minWidth="10.0" prefWidth="906.0" />
+                                <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="369.0" minWidth="0.0" percentWidth="0.0" prefWidth="162.0" />
+                            </columnConstraints>
+                            <rowConstraints>
+                                <RowConstraints minHeight="10.0" percentHeight="0.0" prefHeight="30.0" valignment="CENTER" />
+                                <RowConstraints minHeight="10.0" percentHeight="0.0" prefHeight="30.0" valignment="CENTER" />
+                            </rowConstraints>
+                            <padding>
+                                <Insets bottom="5.0" left="10.0" right="5.0" top="5.0" />
+                            </padding>
+                        </GridPane>
+                    </content>
+               <padding>
+                  <Insets bottom="5.0" />
+               </padding>
+                </ScrollPane>
+            </children>
+        </Pane>
+      <JFXProgressBar fx:id="progress" minHeight="7.0" opacity="0.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+    </children>
+</AnchorPane>
