@@ -7,9 +7,9 @@
 - Programming language : JavaFx
 - Used libraries : Jsoup (Network communication), JFoenix (Useful widgets)
 - Supported format : 
-  - Documents `{"pdf", "doc", "docx", "webm"}`
-  - Audio `{"mp3", "wav"}`
-  - Video `{"mp4", "wma", "aac", "avi", "flv", "mov", "mkv"}`
+  - Documents `{"pdf", "doc", "docx", "epub"}`
+  - Audio `{"mp3", "wav","aac"}`
+  - Video `{"mp4", "wma", "avi", "flv", "mov", "mkv","webm"}`
   - Pictures `{"png", "jpg","gif"}`
 
 Example : 
